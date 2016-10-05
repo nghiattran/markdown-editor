@@ -22,7 +22,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById('markdown-input'), 
 	scrollbarStyle: 'native',
 	lineWrapping: true,
 	theme: 'base16-light',
-	extraKeys: {"Enter": "newlineAndIndentContinueMarkdownList"}
+	extraKeys: {'Enter': 'newlineAndIndentContinueMarkdownList'}
 }, { showToolbar: true });
 editor.on('change', update);
 
@@ -42,9 +42,9 @@ function updateOutput(input) {
 	$('#printable').html(output);
 
 	out = document.getElementById('markdown-output');
-	var allold = old.getElementsByTagName("*");
+	var allold = old.getElementsByTagName('*');
 	if (allold === undefined) return;
-		var allnew = out.getElementsByTagName("*");
+		var allnew = out.getElementsByTagName('*');
 	if (allnew === undefined) return;
 
 	for (var i = 0, max = Math.min(allold.length, allnew.length); i < max; i++) {
