@@ -48,8 +48,6 @@ table {
 
 #printable {
   visibility: hidden;
-  height: 0px;
-  width: 0px;
 }
 
 @media print {

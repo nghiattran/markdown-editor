@@ -37,7 +37,7 @@ function updateOutput(input) {
 	var old = out.cloneNode(true);
 	var output = md.render(input)
 	var scrollOffset = $('#markdown-output').scrollTop();
-
+	console.log(output);
 	$('#markdown-output').html(output);
 	$('#printable').html(output);
 
